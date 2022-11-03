@@ -1,0 +1,138 @@
+/* CSS doccument */ 
+/*  3)  resources used to learn CSS: 
+https://my-learning.w3schools.com/tutorial/css
+*/
+h1{
+    float: left;
+    color: maroon;
+    font-family: "Papyrus", fantasy;
+    font-size: 30px;
+}
+h2{
+    text-align: center;
+    color: maroon;
+    font-family: "Papyrus", fantasy;
+    font-size: 40px;
+}
+body{
+    background-color: beige;
+    font-weight: 400;
+}
+
+
+/*   2)  the following block of CSS uses code from, with my own work integrated into it
+https://www.youtube.com/watch?v=FEmysQARWFU
+*/
+.containter {
+    width: 60%;
+    margin: 0 auto;
+}
+header{
+    background-color: burlywood;
+}
+header::after{
+    content:'';
+    display: table;
+    clear: both;
+}
+nav{
+    float: right;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    float: left;
+    margin-left: inline-block;
+    margin-left: 70px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+
+    position: relative;
+}
+
+nav > ul > li > a {
+    color: maroon;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+nav a:hover {
+    color: black;
+}
+nav a::before{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: black;
+    position::absolute;
+    top: 0;
+    transition: all ease-in-out 250ms;
+}
+nav a:hover::before{
+    width: 100%
+}
+/**/
+
+
+h1 a {
+    color: maroon;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+h1 a:hover {
+    color: black;
+}
+h1 a::before{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: black;
+    position::absolute;
+    top: 0;
+    transition: all ease-in-out 250ms;
+}
+h1 a:hover::before{
+    width: 100%
+}
+
+nav ul li input {
+    color:maroon;
+    
+}
+nav ul li button {
+
+}
+h3 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li img {
+    height: 42%;
+    width: 28%;
+    float: left;
+
+    margin-left: 3%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 2%;
+    object-fit: cover;
+
+    position: relative;
+}
+p.a {
+    text-align: center;
+    font-family: "monaco", monospace;
+    letter-spacing: -0.5px;
+    font-size: 17px;
+    padding-right: 15%;
+    padding-left: 15%;
+}
